@@ -1,0 +1,112 @@
+:root {
+    font-family: 'arial', sans-serif;
+    font-size: medium;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.focus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url("./1.jpg");
+    background-size: 1920px 100%;
+    background-clip: border-box;
+    background-position: center;
+    overflow-x: hidden;
+    transition: top 0.2s;
+    z-index: 256;
+}
+
+.focus:hover {
+    top: -5vh;
+}
+
+.lamp {
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    top: 20px;
+    left: calc(50% - 150px);
+}
+
+img {
+    user-select: none;
+}
+
+.light {
+    z-index: 3;
+    left: 0%;
+    top: 200px;
+    pointer-events: none;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-bottom: calc(100vh - 200px) solid yellow;
+    opacity: 50%;
+}
+
+.magic {
+    height: 100%;
+    box-sizing: border-box;
+    opacity: 0%;
+    transition: opacity 0.2s;
+}
+
+.img-1 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+}
+
+.mag {
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    right: 50%;
+    height: 450px;
+    width: 600px;
+    background-color: none;
+}
+
+.magic2 {
+    display: inline;
+    top: 100px;
+    left: calc(50% + 100px);
+
+}
+
+.hat {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 45%;
+    height: 300px;
+    width: 300px;
+}
+
+.dove {
+    z-index: 1;
+    left: 55%;
+    top: 50%;
+    transition: top 0.5s;
+}
+
+.rabbit {
+    z-index: 1;
+    left: 55%;  
+    top: 35%;
+    transition: top 0.5s;
+}
